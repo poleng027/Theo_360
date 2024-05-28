@@ -38,13 +38,13 @@
                              <div class="support-contact">
                                 <!-- Phone, email and address with font awesome icon -->
                                 
-                                <p><i class="fa fa-phone"></i>&nbsp; Phone<strong>:</strong> 434-0076</p>
+                                <p><i class="fa fa-phone"></i>&nbsp; Phone<strong>:</strong> 0915 801 8416</p>
                                 <hr />
-                                <p><i class="fa fa-envelope"></i>&nbsp; Email<strong>:</strong> emoblazz@gmail.com</p>
+                                <p><i class="fa fa-envelope"></i>&nbsp; Email<strong>:</strong> theo360studio@gmail.com</p>
                                 <hr />
-                                <p><i class="fa fa-home"></i>&nbsp; Address<strong>:</strong> Talisay City </p>
+                                <p><i class="fa fa-home"></i>&nbsp; Address<strong>:</strong> San Agustin, Ibaan, Batangas </p>
                 <hr />
-        <p><i class="fa fa-facebook"></i>&nbsp; Facebook<strong>:</strong> facebook.com/progaddictbylee </p>
+        <p><i class="fa fa-facebook"></i>&nbsp; Facebook<strong>:</strong> facebook.com/theo360studio </p>
                 <hr />              
                                 <!-- Button -->
                               

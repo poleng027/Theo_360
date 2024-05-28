@@ -16,11 +16,11 @@
 
           <!-- Upload to server link. Class "dropdown-big" creates big dropdown -->
           <li class="dropdown dropdown-big">
-            <a href="#"><span class = "label label-info"><i class="fa fa-facebook"></i></span> Like us on Facebook</a>            
+            <a href="https://www.facebook.com/theo360studio"><span class = "label label-info"><i class="fa fa-facebook"></i></span> Like us on Facebook</a>            
           </li>
           <!-- Sync to server link -->
           <li class="dropdown dropdown-big">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="label label-primary"><i class="fa fa-twitter"></i></span> Follow is on Twitter</a>
+            <a href="https://www.tiktok.com/@theo360studio" class="dropdown-toggle" data-toggle="dropdown"><span class="label label-primary"><i class="fa fa-tiktok"></i></span> Follow us on TikTok</a>
             <!-- Dropdown -->
 
           </li>

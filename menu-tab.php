@@ -6,7 +6,7 @@
         <div class="col-md-4">
           <!-- Logo. -->
           <div class="logo">
-           <a href="index.php"> <h2 class = "logo-text"><span class="bold">Catering Reservation</span></h2></a>	
+           <a href="index.php"> <h2 class = "logo-text"><span class="bold">Theo360</span></h2></a>	
            
           </div>
           <!-- Logo ends -->
@@ -26,8 +26,8 @@
 			
 			
             <li class="dropdown dropdown-big">
-              <a href="menu.php">
-                <i class="fa fa-cutlery"></i> Menu
+              <a href="services.php">
+                <i class="fa fa-camera"></i> Services
               </a>                
             </li>
 			
