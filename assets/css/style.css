@@ -20,7 +20,7 @@
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background-image: url('../imgs/bg.png');
+    background-image: url('bg.png');
 }
 .container{
     position: relative;
@@ -485,4 +485,174 @@ body{
     right: 0;
     left: initial;
   }
+}
+/* =======================Messages Css============================== */
+body {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.main{
+  margin-left: 10px;
+}
+.messages-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--blue);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.messages-container h2 {
+  margin-bottom: 20px;
+}
+
+.message {
+  position: relative;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.actions {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.actions button:hover {
+  color: #333;
+}
+/* =============================Service Css======================= */
+.main-content {
+  padding: 20px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  position: relative; 
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 10px;
+  flex-basis: calc(33.333% - 20px); 
+}
+
+.service h3 {
+  margin-top: 0;
+}
+
+.service p {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.actions-1 {
+  position: absolute; 
+  bottom: 10px; 
+  right: 10px; 
+}
+
+.actions-1 button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions-1 button:hover {
+  background-color: #0056b3;
+}
+
+.add-service {
+  margin-top: 20px;
+}
+
+.add-service input[type="text"],
+.add-service input[type="number"] {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-service button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.add-service button:hover {
+  background-color: #218838;
+}
+/* =====================Password CSS======================= */
+.change-password,
+.add-admin {
+  margin-bottom: 20px;
+}
+
+.change-password h3,
+.add-admin h3 {
+  margin-top: 0;
+}
+
+.change-password form,
+.add-admin form {
+  margin-top: 10px;
+}
+
+.change-password input,
+.add-admin input,
+.change-password button,
+.add-admin button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.change-password button,
+.add-admin button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.change-password button:hover,
+.add-admin button:hover {
+  background-color: #0056b3;
 }
