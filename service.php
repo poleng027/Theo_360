@@ -4,10 +4,10 @@ $con = new database();
 
 if(isset($_POST['addPackage'])){
     $service_name = $_POST['serviceName'];
-    $service_description = $_POST['serviceDesc'];
+    $service_desc = $_POST['serviceDesc'];
     $service_price = $_POST['servicePrice'];
 
-      $result = $con->addPackage($service_name, $service_description, $service_price);
+      $result = $con->addPackage($service_name, $service_desc, $service_price);
 
       if($result) {
         header('location:service.php');
@@ -122,13 +122,12 @@ if(isset($_POST['addPackage'])){
     <h2>Package Services</h2>
     <div class="add-service">
         <h3>Add New Service</h3>
-        <!--  <label for="firstName">First Name:</label>
-            <input type="text" class="form-control" name="firstName" required placeholder="Enter first name"> -->
-        <form>
+        
+        <form method="POST">
             <input type="text" class="form-control" name="serviceName" placeholder="Service Name" required>
             <input type="text" class="form-control" name="serviceDesc" placeholder="Description" required>
             <input type="number" class="form-control" name="servicePrice" placeholder="Price" required>
-            <button type="submit">Add Service</button>
+            <button type="submit" name="addPackage">Add Service</button>
         </form>
     </div>
 
@@ -161,31 +160,7 @@ if(isset($_POST['addPackage'])){
             ?>
     </div>
     
-    <!-- <div class="services-container">
-        <div class="service">
-            <h3>Special Package</h3>
-            <p> 360 PLATFORM WITH MOTORIZED ROTATING ARM </p>
-            <p> 4 HOURS OF UNLIMITED SHOTS</p>
-            <p>CUSTOMIZED VIDEO OVERLAY</p>
-            <p> INSTANT SHARING STATION </p>
-            <p>8RGB TUBE LIGHTS</p>
-            <p> FOG MACHINE</p>
-            <p>BUBBLE MACHINE </p>
-            <p>STANCHION POST</p>
-            <p>RED CARPET</p>
-            <p>FUN PROPS</p>
- 
-               <h4>ADD ONS:</h4> 
-               <p>TRANSPORTATION FEE (DEPENDING ON THE LOCATION)</p>
-                <p>ADDITIONAL PHP2000.00 PER EXCEEDING HOUR</p>
-                <p>PHP700.00 FOR CUSTOMIZED 8X8 TARPAULIN BACKDROP (OPTIONAL) </p>
-                
-            <div class="price">Php 17999.00</div>
-            <div class="actions-1">
-                <button class="edit-btn"><ion-icon name="create-outline"></ion-icon>Edit</button>
-                <button class="delete-btn"><ion-icon name="trash-outline"></ion-icon>Delete</button>
-            </div>
-        </div> -->
+    
     </div>
     
 </div>
