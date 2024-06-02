@@ -1,3 +1,22 @@
+<?php 
+require_once('classes/database.php');
+$con = new database();
+
+if(isset($_POST['addPackage'])){
+    $service_name = $_POST['serviceName'];
+    $service_description = $_POST['serviceDesc'];
+    $service_price = $_POST['servicePrice'];
+
+      $result = $con->addPackage($service_name, $service_description, $service_price);
+
+      if($result) {
+        header('location:service.php');
+      } else {
+        echo "Failed to add package";
+      }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +30,8 @@
 </head>
 
 <body>
-    <!-- =============== Navigation ================ -->
-    <div class="container">
+     <!-- =============== Navigation ================ -->
+     <div class="container">
         <div class="navigation">
             <ul>
                 <li>
@@ -25,7 +44,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="index.php">
                         <span class="icon">
                             <ion-icon name="home"></ion-icon>
                         </span>
@@ -34,7 +53,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="reservation.php">
                         <span class="icon">
                             <ion-icon name="calendar"></ion-icon>
                         </span>
@@ -43,7 +62,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="service.php">
                         <span class="icon">
                             <ion-icon name="card"></ion-icon>
                         </span>
@@ -52,7 +71,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="messages.php">
                         <span class="icon">
                             <ion-icon name="mail"></ion-icon>
                         </span>
@@ -61,7 +80,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="password.php">
                         <span class="icon">
                             <ion-icon name="key"></ion-icon>
                         </span>
@@ -71,7 +90,7 @@
 
 
                 <li>
-                    <a href="#">
+                    <a href="login.php">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
                         </span>
@@ -103,14 +122,46 @@
     <h2>Package Services</h2>
     <div class="add-service">
         <h3>Add New Service</h3>
+        <!--  <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" name="firstName" required placeholder="Enter first name"> -->
         <form>
-            <input type="text" placeholder="Service Name" required>
-            <input type="text" placeholder="Description" required>
-            <input type="number" placeholder="Price" required>
+            <input type="text" class="form-control" name="serviceName" placeholder="Service Name" required>
+            <input type="text" class="form-control" name="serviceDesc" placeholder="Description" required>
+            <input type="number" class="form-control" name="servicePrice" placeholder="Price" required>
             <button type="submit">Add Service</button>
         </form>
     </div>
-    <div class="services-container">
+
+    <div class="service-container">
+        <div class="service">
+            <div class="card-container">
+                <?php
+                $services = $con->viewServices();
+                foreach($services as $service) {
+                    ?>
+                <form method="post">
+                    <div class="card">
+                        <h4 class="card-title"><?php echo $service['service_name']; ?></h4>
+                        <h5 class="card-text"><?php echo $service['service_desc']; ?></h5>
+                        <p class="card-text"> Price: PHP <?php echo $service['service_price'] ?></p>
+
+            <div class="actions-1">
+                <input type="hidden" name="id" value="<?php $service['service_id']; ?>">
+                <button class="edit-btn"><ion-icon name="create-outline"></ion-icon>Edit</button>
+                <input type="hidden" name="id" value="<?php echo $sevice['service_id']; ?>">
+                <button class="delete-btn"><ion-icon name="trash-outline"></ion-icon>Delete</button>
+            </div>
+                
+                    </div>
+                </form>
+            </div>
+        </div>
+        <?php
+            }
+            ?>
+    </div>
+    
+    <!-- <div class="services-container">
         <div class="service">
             <h3>Special Package</h3>
             <p> 360 PLATFORM WITH MOTORIZED ROTATING ARM </p>
@@ -134,7 +185,7 @@
                 <button class="edit-btn"><ion-icon name="create-outline"></ion-icon>Edit</button>
                 <button class="delete-btn"><ion-icon name="trash-outline"></ion-icon>Delete</button>
             </div>
-        </div>
+        </div> -->
     </div>
     
 </div>

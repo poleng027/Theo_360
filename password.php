@@ -25,7 +25,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="index.php">
                         <span class="icon">
                             <ion-icon name="home"></ion-icon>
                         </span>
@@ -34,7 +34,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="reservation.php">
                         <span class="icon">
                             <ion-icon name="calendar"></ion-icon>
                         </span>
@@ -43,7 +43,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="service.php">
                         <span class="icon">
                             <ion-icon name="card"></ion-icon>
                         </span>
@@ -52,7 +52,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="messages.php">
                         <span class="icon">
                             <ion-icon name="mail"></ion-icon>
                         </span>
@@ -61,7 +61,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="password.php">
                         <span class="icon">
                             <ion-icon name="key"></ion-icon>
                         </span>
@@ -71,7 +71,7 @@
 
 
                 <li>
-                    <a href="#">
+                    <a href="login.php">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
                         </span>
@@ -80,7 +80,6 @@
                 </li>
             </ul>
         </div>
-
         <!-- ========================= Main ==================== -->
         <div class="main">
             <div class="topbar">
@@ -100,59 +99,26 @@
                 </div>
             </div>
 
-            <!-- ======================= Cards ================== -->
-            <div class="cardBox">
-                <div class="card">
-                    <div>
-                        <div class="numbers">0</div>
-                        <div class="cardName">Pending</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="refresh-circle"></ion-icon>
-                    </div>
+            <!-- =============== Main Content ================ -->
+            <div class="main-content">
+                <h2>Password Management</h2>
+                <div class="change-password">
+                    <h3>Change Password</h3>
+                    <form>
+                        <input type="password" placeholder="Current Password" required>
+                        <input type="password" placeholder="New Password" required>
+                        <input type="password" placeholder="Confirm New Password" required>
+                        <button type="submit">Change Password</button>
+                    </form>
                 </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">0</div>
-                        <div class="cardName">Approved</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
+                <div class="add-admin">
+                    <h3>Add New Admin</h3>
+                    <form>
+                        <input type="text" placeholder="Admin Username" required>
+                        <input type="password" placeholder="Admin Password" required>
+                        <button type="submit">Add Admin</button>
+                    </form>
                 </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">0</div>
-                        <div class="cardName">Finished</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="checkmark-done-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">0</div>
-                        <div class="cardName">Cancelled</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="close-circle"></ion-icon>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ================ Add Charts JS ================= -->
-            <div class="chartsBx">
-                <div class="chart"> <canvas id="chart-1"></canvas>
-                <h3>Feedback</h3> </div>
-                <div class="chart"> <canvas id="chart-2"></canvas>
-                <h3>Monthly Report</h3> </div>
             </div>
 
 

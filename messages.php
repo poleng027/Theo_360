@@ -25,7 +25,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="index.php">
                         <span class="icon">
                             <ion-icon name="home"></ion-icon>
                         </span>
@@ -34,7 +34,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="reservation.php">
                         <span class="icon">
                             <ion-icon name="calendar"></ion-icon>
                         </span>
@@ -43,7 +43,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="service.php">
                         <span class="icon">
                             <ion-icon name="card"></ion-icon>
                         </span>
@@ -52,7 +52,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="messages.php">
                         <span class="icon">
                             <ion-icon name="mail"></ion-icon>
                         </span>
@@ -61,7 +61,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="password.php">
                         <span class="icon">
                             <ion-icon name="key"></ion-icon>
                         </span>
@@ -71,7 +71,7 @@
 
 
                 <li>
-                    <a href="#">
+                    <a href="login.php">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
                         </span>

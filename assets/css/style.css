@@ -577,7 +577,7 @@ body {
 .actions-1 button {
   margin-left: 10px;
   padding: 5px 10px;
-  background-color: #007bff;
+  background-color: var(--blue);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -585,7 +585,7 @@ body {
 }
 
 .actions-1 button:hover {
-  background-color: #0056b3;
+  background-color: var(--purple);
 }
 
 .add-service {
@@ -603,8 +603,8 @@ body {
 }
 
 .add-service button {
-  background-color: #28a745;
-  color: #fff;
+  background-color: var(--blue);
+  color: white;
   border: none;
   border-radius: 4px;
   padding: 8px 16px;
@@ -612,7 +612,7 @@ body {
 }
 
 .add-service button:hover {
-  background-color: #218838;
+  background-color: var(--purple);
 }
 /* =====================Password CSS======================= */
 .change-password,
@@ -645,7 +645,7 @@ body {
 
 .change-password button,
 .add-admin button {
-  background-color: #007bff;
+  background-color: var(--blue);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -654,5 +654,5 @@ body {
 
 .change-password button:hover,
 .add-admin button:hover {
-  background-color: #0056b3;
+  background-color: var(--purple);
 }
