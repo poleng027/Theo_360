@@ -26,7 +26,8 @@ body{
     position: relative;
     width: 100%;
 }
-/* ============================navigation============= */
+
+/* ===============navigation============= */
 .navigation{
     position: fixed;
     width: 300px;
@@ -121,6 +122,7 @@ body{
     box-shadow: 35px -35px 0 10px var(--purple);
     pointer-events: none;
 }
+
 /* ===================== Main ===================== */
 .main {
   position: absolute;
