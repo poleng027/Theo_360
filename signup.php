@@ -107,7 +107,7 @@ if (isset($_POST['multisave'])) {
   <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
   <!-- JQuery for Address Selector -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <title>Form with MultiStep and Address Selector</title>
+  <title>Signup</title>
   <style>
     .form-step {
       display: none;
