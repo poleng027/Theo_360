@@ -118,7 +118,7 @@
           <li class="has_sub">
             <a href="services-u.php"><i class="fa fa-cogs"></i> Services <span class="pull-right"><i class="fa fa-chevron-right"></i></span></a>
           </li>  
-          <li><a href="messages.php"><i class="fa fa-envelope"></i> Messages</a></li> 
+          <li><a href="contact-u.php"><i class="fa fa-envelope"></i> Messages</a></li> 
           <li><a href="feedback-u.php"><i class="fa fa-star"></i> Feedback</a></li> 
         </ul>
     </div>

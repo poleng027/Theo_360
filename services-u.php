@@ -1,3 +1,11 @@
+<?php
+
+require_once('classes/database.php');
+$con = new database();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,25 +114,26 @@ footer {
     </header>
 
     <section class="packages">
+    <?php
+    $services = $con->viewServices();
+    // $service = $services['service_desc'];
+    foreach($services as $service) {
+       ?>
 
         <div class="package">
-            <h2>SPECIAL PACKAGE</h2>
+            <h2><?php echo $service['service_name'];?></h2>
             <ul>
-                <li>360 platform with motorized rotating arm</li>
-                <li>4 Hours Of Unlimited Shoots</li>
-                <li>Customized Video Overlay</li>
-                <li>Instant Sharing Station</li>
-                <li>8 RGB Tube Lights</li>
-                <li>Fog Machine</li>
-                <li>Bubble Machine</li>
-                <li>Stanchion Posts</li>
-                <li>Red Carpet</li>
-                <li>Fun Props</li>
-            
-            </ul>
-            <p class="price">PHP 17,999.00</p>
-            <button>Book Now</button>
+                                <?php $descArray = explode(',', $service['service_desc']);?>
+                                <?php foreach ($descArray as $desc) {?>
+                                <li><?php echo trim($desc);?></li>
+                                 <?php }?>
+                            </ul>
+            <p class="price">Price: PHP <?php echo $service['service_price']?></p>
+            <a href="book-u.php"><button >Book Now</button></a>
         </div>
+        <?php
+    }
+    ?>
     </section>
 
     <footer>

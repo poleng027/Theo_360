@@ -15,6 +15,18 @@ if(isset($_POST['addPackage'])){
         echo "Failed to add package";
       }
     }
+
+if(isset($_POST['delete'])){
+    $service_id = $_POST['id'];
+
+    if($con->deletePackage($service_id)){
+        header('location:service.php');
+    } else {
+        echo 'Failed to delete Package';
+    }
+}
+
+
 ?>
  
 <!DOCTYPE html>
@@ -26,8 +38,7 @@ if(isset($_POST['addPackage'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service</title>
     <!-- ======= Styles ====== -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-
+    <link rel="stylesheet" href="./assets/css/style.css?v=<?php echo time();?>">
 </head>
  
 <body>
@@ -156,10 +167,9 @@ if(isset($_POST['addPackage'])){
                         <p class="card-text"> Price: PHP <?php echo $service['service_price']?></p>
  
                         <div class="actions-1">
-                            <input type="hidden" name="id" value="<?php $service['service_id'];?>">
+                            <input type="hidden" name="id" value="<?php echo $service['service_id'];?>">
                             <button class="edit-btn"><ion-icon name="create-outline"></ion-icon>Edit</button>
-                            <input type="hidden" name="id" value="<?php echo $sevice['service_id'];?>">
-                            <button class="delete-btn"><ion-icon name="trash-outline"></ion-icon>Delete</button>
+                            <button class="delete-btn" name="delete"><ion-icon name="trash-outline"></ion-icon>Delete</button>
                         </div>
                     </div>
                 </form>

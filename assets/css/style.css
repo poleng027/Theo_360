@@ -405,6 +405,10 @@ body {
 .main-content {
   padding: 20px;
 }
+
+.main-content h2{
+  color: white;
+}
  
 .services-container {
   display: flex;
@@ -488,6 +492,7 @@ body {
 .change-password h3,
 .add-admin h3 {
   margin-top: 0;
+  color: white;
 }
  
 .change-password form,

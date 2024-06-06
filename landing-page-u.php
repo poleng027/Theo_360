@@ -109,7 +109,8 @@
             <p>
             Founded on the principle that every moment holds beauty and significance, Theo360 combines advanced technology with creative expertise to produce immersive, emotionally resonant videos tailored to each client's unique vision. Their client-centric approach emphasizes personalized service and strong relationships, ensuring satisfaction from initial consultation to final edit. Versatile and adaptable, Theo360 remains at the industry's forefront, creating impactful visual stories that inspire and connect people.
             </p>
-            <button class="book-now-btn">Book Now</button>
+            <a href="book-u.php"><button class="book-now-btn">Book Now</button></a>
+
         </div>
         <div class="video-section">
             <video autoplay muted loop>
