@@ -2,7 +2,7 @@
 class database
 {
     function opencon(){
-        return new PDO('mysql:host=localhost; dbname=res_theo','root','');
+        return new PDO('mysql:host=localhost; dbname=reservation','root','');
     }
     function addPackage($service_name, $service_desc, $service_price){
         $con = $this->opencon();
