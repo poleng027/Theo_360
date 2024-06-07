@@ -11,7 +11,7 @@
     padding: 20px;
     font-family: 'Arial', sans-serif;
     background-color: #b897b0;
-    background: url(./assets/imgs/bg.png);
+    background: url(./assets/imgs/background.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -39,7 +39,7 @@
  
 h1 {
     font-size: 2.5em;
-    color: #b596cb; /* Purple color */
+    color: white; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 5px #ded5d5; /* Text shadow */
     margin-bottom: 50px;
     text-align: center;

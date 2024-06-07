@@ -9,79 +9,83 @@
 </head>
 <style>
     body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: url(./assets/imgs/bg.png);
-    background-size: cover;
-    background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(./assets/imgs/bg.png);
+  background-size: cover;
+  background-position: center;
 }
- 
+
 .container {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 800px; 
-    width: 90%;
-    margin-top: 50px;
-    height: 450px;
-    text-align: center;
-    background-color: #e7d5e8;
+  max-width: 800px;
+  width: 90%;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #e7d5e8;
+  text-align: center;
 }
- 
+
 h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 80px;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
 }
- 
+
 .subheading {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 80px;
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 40px;
 }
- 
+
 .icons {
-    font-size: 1.5em;
-    margin-bottom: 40px;
-    display: flex; 
-    justify-content: center; 
+  font-size: 2em;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
- 
+
 .icons i {
-    margin: auto 50px;
+  margin: 0 20px;
+  transition: color 0.3s ease;
 }
- 
+
+.icons i:hover {
+  color: #337ab7;
+}
+
 .contact-info {
-    display: flex;
-    justify-content: center;
-   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
- 
+
 .contact-info p {
-    margin: 50px;
-    color: #666;
-    margin-top: unset;
+  margin: 20px;
+  color: #666;
 }
- 
+
 .contact-info span {
-    display: flex;
-    align-items: center;
-    margin-top: 10px; 
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
- 
+
 .contact-info span p {
-    margin: 0 10px; 
+  margin: 0 10px;
 }
- 
+
 .additional-info {
-    margin-top: 20px;
-    color: #666;
+  margin-top: 20px;
+  color: #666;
+  font-size: 1.2em;
 }
 </style>
 <body>
@@ -91,8 +95,8 @@ h2 {
         <h2>Contact Us</h2>
         <p class="subheading">Have You Got Any Questions?</p>
         <div class="icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-tiktok"></i>
+            <a href="https://www.facebook.com/theo360studio"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@theo360studio"><i class="fab fa-tiktok"></i></a>
             <i class="fas fa-envelope"></i>
             <i class="fas fa-phone-alt"></i>
         </div>
